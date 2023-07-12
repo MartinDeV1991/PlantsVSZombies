@@ -52,7 +52,7 @@ function handleGameStatus() {
         ctx.font = '60px Orbitron';
         ctx.fillText('Game Over', 170, 330);
     }
-    if (score > winningScore && enemies.length === 0) {
+    if (score >= winningScore && enemies.length === 0) {
         ctx.fillStyle = 'white';
         ctx.font = '60px Orbitron';
         ctx.fillText('LEVEL COMPLETE', 130, 300);
